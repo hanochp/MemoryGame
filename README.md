@@ -11,5 +11,5 @@ with their letter: the first player to move is X and the second player is O. The
 set, defined as a row, column, or diagonal line of three spots, wins. If all spots are filled and neither
 player has a winning set, then the game results in a tie.
 
-**The full spec for this software is [tic-tac-toe-spec.md](docs/tic-tac-toe-spec.md) in the docs folder.**
+**The full spec for this software is [Memory-gmae-spec.md](docs/Memory-gmae-spec.md) in the docs folder.**
 

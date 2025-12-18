@@ -12,5 +12,6 @@ set, defined as a row, column, or diagonal line of three spots, wins. If all spo
 player has a winning set, then the game results in a tie.
 
 <img src="Memory_Game_Wireframe.png" width="600" />
+
 **The full spec for this software is [Memory-gmae-spec.md](docs/Memory-gmae-spec.md) in the docs folder.**
 

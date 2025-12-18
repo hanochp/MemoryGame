@@ -16,7 +16,7 @@ The document includes:
 
 ## The Game
 
-The game is presented as a **4×4 grid** containing **16 cards**.
+The game is presented as a **5×4 grid** containing **16 cards**.
 
 - Each card has:
   - A **question mark** on the front

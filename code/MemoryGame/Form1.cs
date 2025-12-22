@@ -260,7 +260,6 @@ namespace MemoryGame
         private void BtnRestart_Click(object? sender, EventArgs e)
         {
             if (gamestatus == GameStageEnum.Playing && turnstaken >= 1)
-
             {
                 
                 RestartGame();

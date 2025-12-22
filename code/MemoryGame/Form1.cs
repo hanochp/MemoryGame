@@ -10,6 +10,7 @@ namespace MemoryGame
         List<PictureBox> cardsturnedover = new();
 
         List<Image> cardimages;
+        Dictionary<string, int> pairAttemptCounts = new();
         enum GameStageEnum { NotPlaying, Playing, NoCardsSelected, OneCardSelected, TwoCardsSelected }
         GameStageEnum gamestatus = MemoryGame.GameStageEnum.NotPlaying;
         GameStageEnum CardsSelected = GameStageEnum.NoCardsSelected;
@@ -97,6 +98,48 @@ namespace MemoryGame
 
         }
 
+        private async Task ShowTemporaryMessage(string message)
+        {
+            pnlMessage.Visible = true;
+            lblMessage.Text = message;
+            EnableDisableAllControls(EnableDisableEnum.disable);
+            await Task.Delay(2000);
+            pnlMessage.Visible = false;
+            if (gamestatus == GameStageEnum.Playing)
+            {
+                EnableDisableAllControls(EnableDisableEnum.enable);
+            }
+        }
+
+        private async Task TrackPairAttemptsAndNotify(List<PictureBox> lstcardsturnedover)
+        {
+            if (lstcardsturnedover.Count != 2)
+            {
+                return;
+            }
+
+            int firstIndex = lstallpictureboxes.IndexOf(lstcardsturnedover[0]);
+            int secondIndex = lstallpictureboxes.IndexOf(lstcardsturnedover[1]);
+            if (firstIndex == -1 || secondIndex == -1)
+            {
+                return;
+            }
+
+            string key = firstIndex < secondIndex ? $"{firstIndex}-{secondIndex}" : $"{secondIndex}-{firstIndex}";
+            if (!pairAttemptCounts.TryGetValue(key, out int count))
+            {
+                count = 0;
+            }
+
+            count++;
+            pairAttemptCounts[key] = count;
+
+            if (count > 2)
+            {
+                await ShowTemporaryMessage("You should try better!");
+            }
+        }
+
         private void UpdateScoreAndTurnsTaken()
         {
             lblTurnsTaken.Text = "Turns Taken: " + turnstaken.ToString();
@@ -146,6 +189,7 @@ namespace MemoryGame
             if (CardsSelected == GameStageEnum.TwoCardsSelected && lstcardsturnedover.Count == 2)
             {
 
+                await TrackPairAttemptsAndNotify(lstcardsturnedover);
 
                 bool b = lstcardsturnedover[0].Image == lstcardsturnedover[1].Image;
                 if (b == true)
@@ -236,6 +280,7 @@ namespace MemoryGame
         {
             setsfound = 0;
             turnstaken = 0;
+            pairAttemptCounts.Clear();
             UpdateScoreAndTurnsTaken();
             AssignPicturesToPictureBoxVariables();
             lstallpictureboxes.ForEach(p => p.ImageLocation = path + "question-mark-icon.png");

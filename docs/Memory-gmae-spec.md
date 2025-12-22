@@ -9,7 +9,7 @@ The Memory Game is a single-player card-matching experience presented as a **6x4
 ## Rules and Objectives
 
 - **Objective:** Find all matching pairs before exceeding the allowed mistake threshold.
-- **Mistake threshold:** A maximum of **5 mismatched attempts** is allowed; this is tracked as **Moves Taken − Sets Found**.
+- **Mistake threshold:** A maximum of **10 mismatched attempts** is allowed; this is tracked as **Moves Taken − Sets Found**.
 - **Initial state:** All cards and buttons are disabled; the center label displays *"Click the Start button to start playing"*.
 - **Starting play:** Clicking **Start** removes the center label, enables all cards, and ignores further Start clicks until a restart.
 - **Card matching rules:**

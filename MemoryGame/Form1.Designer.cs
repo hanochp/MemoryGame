@@ -34,38 +34,59 @@
             btnRestart = new Button();
             lblSetsFound = new Label();
             tblOutput = new TableLayoutPanel();
-            pictureBox15 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
+            pictureBox24 = new PictureBox();
+            pictureBox23 = new PictureBox();
+            pictureBox22 = new PictureBox();
+            pictureBox21 = new PictureBox();
+            pictureBox20 = new PictureBox();
+            pictureBox19 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            pictureBox15 = new PictureBox();
+            pictureBox16 = new PictureBox();
+            pictureBox17 = new PictureBox();
+            pictureBox18 = new PictureBox();
+            pnlMessage = new Panel();
+            lblMessage = new Label();
             tblMain.SuspendLayout();
             tblOutput.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            pnlMessage.SuspendLayout();
             SuspendLayout();
             // 
             // tblMain
@@ -80,6 +101,7 @@
             tblMain.Controls.Add(btnRestart, 1, 0);
             tblMain.Controls.Add(lblSetsFound, 3, 0);
             tblMain.Controls.Add(tblOutput, 0, 1);
+            tblMain.Dock = DockStyle.Fill;
             tblMain.Location = new Point(0, 0);
             tblMain.Name = "tblMain";
             tblMain.RowCount = 2;
@@ -143,156 +165,123 @@
             // 
             // tblOutput
             // 
-            tblOutput.ColumnCount = 5;
+            tblOutput.ColumnCount = 6;
             tblMain.SetColumnSpan(tblOutput, 4);
-            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tblOutput.Controls.Add(pictureBox15, 4, 2);
-            tblOutput.Controls.Add(pictureBox14, 3, 2);
-            tblOutput.Controls.Add(pictureBox13, 2, 2);
-            tblOutput.Controls.Add(pictureBox12, 1, 2);
-            tblOutput.Controls.Add(pictureBox11, 0, 2);
-            tblOutput.Controls.Add(pictureBox10, 4, 1);
-            tblOutput.Controls.Add(pictureBox9, 3, 1);
-            tblOutput.Controls.Add(pictureBox8, 2, 1);
-            tblOutput.Controls.Add(pictureBox7, 1, 1);
-            tblOutput.Controls.Add(pictureBox6, 0, 1);
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666718F));
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            tblOutput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            tblOutput.Controls.Add(pictureBox24, 5, 3);
+            tblOutput.Controls.Add(pictureBox23, 4, 3);
+            tblOutput.Controls.Add(pictureBox22, 3, 3);
+            tblOutput.Controls.Add(pictureBox21, 2, 3);
+            tblOutput.Controls.Add(pictureBox20, 1, 3);
+            tblOutput.Controls.Add(pictureBox19, 0, 3);
             tblOutput.Controls.Add(pictureBox5, 4, 0);
             tblOutput.Controls.Add(pictureBox4, 3, 0);
             tblOutput.Controls.Add(pictureBox3, 2, 0);
             tblOutput.Controls.Add(pictureBox2, 1, 0);
             tblOutput.Controls.Add(pictureBox1, 0, 0);
+            tblOutput.Controls.Add(pictureBox6, 5, 0);
+            tblOutput.Controls.Add(pictureBox7, 0, 1);
+            tblOutput.Controls.Add(pictureBox8, 1, 1);
+            tblOutput.Controls.Add(pictureBox9, 2, 1);
+            tblOutput.Controls.Add(pictureBox10, 3, 1);
+            tblOutput.Controls.Add(pictureBox11, 4, 1);
+            tblOutput.Controls.Add(pictureBox12, 5, 1);
+            tblOutput.Controls.Add(pictureBox13, 0, 2);
+            tblOutput.Controls.Add(pictureBox14, 1, 2);
+            tblOutput.Controls.Add(pictureBox15, 2, 2);
+            tblOutput.Controls.Add(pictureBox16, 3, 2);
+            tblOutput.Controls.Add(pictureBox17, 4, 2);
+            tblOutput.Controls.Add(pictureBox18, 5, 2);
             tblOutput.Dock = DockStyle.Fill;
             tblOutput.Location = new Point(3, 72);
             tblOutput.Name = "tblOutput";
-            tblOutput.RowCount = 3;
-            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tblOutput.RowCount = 4;
+            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tblOutput.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tblOutput.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tblOutput.Size = new Size(983, 651);
             tblOutput.TabIndex = 4;
             // 
-            // pictureBox15
+            // pictureBox24
             // 
-            pictureBox15.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox15.Dock = DockStyle.Fill;
-            pictureBox15.Location = new Point(787, 437);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(193, 211);
-            pictureBox15.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox15.TabIndex = 14;
-            pictureBox15.TabStop = false;
+            pictureBox24.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox24.Dock = DockStyle.Fill;
+            pictureBox24.Location = new Point(818, 489);
+            pictureBox24.Name = "pictureBox24";
+            pictureBox24.Size = new Size(162, 159);
+            pictureBox24.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox24.TabIndex = 23;
+            pictureBox24.TabStop = false;
             // 
-            // pictureBox14
+            // pictureBox23
             // 
-            pictureBox14.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox14.Dock = DockStyle.Fill;
-            pictureBox14.Location = new Point(591, 437);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(190, 211);
-            pictureBox14.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox14.TabIndex = 13;
-            pictureBox14.TabStop = false;
+            pictureBox23.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox23.Dock = DockStyle.Fill;
+            pictureBox23.Location = new Point(655, 489);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(157, 159);
+            pictureBox23.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox23.TabIndex = 22;
+            pictureBox23.TabStop = false;
             // 
-            // pictureBox13
+            // pictureBox22
             // 
-            pictureBox13.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox13.Dock = DockStyle.Fill;
-            pictureBox13.Location = new Point(395, 437);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(190, 211);
-            pictureBox13.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox13.TabIndex = 12;
-            pictureBox13.TabStop = false;
+            pictureBox22.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox22.Dock = DockStyle.Fill;
+            pictureBox22.Location = new Point(492, 489);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(157, 159);
+            pictureBox22.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox22.TabIndex = 21;
+            pictureBox22.TabStop = false;
             // 
-            // pictureBox12
+            // pictureBox21
             // 
-            pictureBox12.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox12.Dock = DockStyle.Fill;
-            pictureBox12.Location = new Point(199, 437);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(190, 211);
-            pictureBox12.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox12.TabIndex = 11;
-            pictureBox12.TabStop = false;
+            pictureBox21.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox21.Dock = DockStyle.Fill;
+            pictureBox21.Location = new Point(329, 489);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(157, 159);
+            pictureBox21.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox21.TabIndex = 20;
+            pictureBox21.TabStop = false;
             // 
-            // pictureBox11
+            // pictureBox20
             // 
-            pictureBox11.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox11.Dock = DockStyle.Fill;
-            pictureBox11.Location = new Point(3, 437);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(190, 211);
-            pictureBox11.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox11.TabIndex = 10;
-            pictureBox11.TabStop = false;
+            pictureBox20.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox20.Dock = DockStyle.Fill;
+            pictureBox20.Location = new Point(166, 489);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(157, 159);
+            pictureBox20.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox20.TabIndex = 19;
+            pictureBox20.TabStop = false;
             // 
-            // pictureBox10
+            // pictureBox19
             // 
-            pictureBox10.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox10.Dock = DockStyle.Fill;
-            pictureBox10.Location = new Point(787, 220);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(193, 211);
-            pictureBox10.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox10.TabIndex = 9;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox9.Dock = DockStyle.Fill;
-            pictureBox9.Location = new Point(591, 220);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(190, 211);
-            pictureBox9.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox9.TabIndex = 8;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox8.Dock = DockStyle.Fill;
-            pictureBox8.Location = new Point(395, 220);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(190, 211);
-            pictureBox8.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox8.TabIndex = 7;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox7.Dock = DockStyle.Fill;
-            pictureBox7.Location = new Point(199, 220);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(190, 211);
-            pictureBox7.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox7.TabIndex = 6;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Location = new Point(3, 220);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(190, 211);
-            pictureBox6.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox6.TabIndex = 5;
-            pictureBox6.TabStop = false;
+            pictureBox19.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox19.Dock = DockStyle.Fill;
+            pictureBox19.Location = new Point(3, 489);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(157, 159);
+            pictureBox19.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox19.TabIndex = 18;
+            pictureBox19.TabStop = false;
             // 
             // pictureBox5
             // 
             pictureBox5.BorderStyle = BorderStyle.Fixed3D;
             pictureBox5.Dock = DockStyle.Fill;
-            pictureBox5.Location = new Point(787, 3);
+            pictureBox5.Location = new Point(655, 3);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(193, 211);
+            pictureBox5.Size = new Size(157, 156);
             pictureBox5.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
@@ -301,9 +290,9 @@
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Dock = DockStyle.Fill;
-            pictureBox4.Location = new Point(591, 3);
+            pictureBox4.Location = new Point(492, 3);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(190, 211);
+            pictureBox4.Size = new Size(157, 156);
             pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
@@ -312,9 +301,9 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Dock = DockStyle.Fill;
-            pictureBox3.Location = new Point(395, 3);
+            pictureBox3.Location = new Point(329, 3);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(190, 211);
+            pictureBox3.Size = new Size(157, 156);
             pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -323,9 +312,9 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Location = new Point(199, 3);
+            pictureBox2.Location = new Point(166, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(190, 211);
+            pictureBox2.Size = new Size(157, 156);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -336,36 +325,209 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(190, 211);
+            pictureBox1.Size = new Size(157, 156);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Location = new Point(818, 3);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(162, 156);
+            pictureBox6.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox6.TabIndex = 5;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox7.Dock = DockStyle.Fill;
+            pictureBox7.Location = new Point(3, 165);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(157, 156);
+            pictureBox7.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox7.TabIndex = 6;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox8.Dock = DockStyle.Fill;
+            pictureBox8.Location = new Point(166, 165);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(157, 156);
+            pictureBox8.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox8.TabIndex = 7;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox9.Dock = DockStyle.Fill;
+            pictureBox9.Location = new Point(329, 165);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(157, 156);
+            pictureBox9.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox9.TabIndex = 8;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox10.Dock = DockStyle.Fill;
+            pictureBox10.Location = new Point(492, 165);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(157, 156);
+            pictureBox10.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox10.TabIndex = 9;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox11.Dock = DockStyle.Fill;
+            pictureBox11.Location = new Point(655, 165);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(157, 156);
+            pictureBox11.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox11.TabIndex = 10;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox12.Dock = DockStyle.Fill;
+            pictureBox12.Location = new Point(818, 165);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(162, 156);
+            pictureBox12.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox12.TabIndex = 11;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox13.Dock = DockStyle.Fill;
+            pictureBox13.Location = new Point(3, 327);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(157, 156);
+            pictureBox13.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox13.TabIndex = 12;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox14.Dock = DockStyle.Fill;
+            pictureBox14.Location = new Point(166, 327);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(157, 156);
+            pictureBox14.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox14.TabIndex = 13;
+            pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox15.Dock = DockStyle.Fill;
+            pictureBox15.Location = new Point(329, 327);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(157, 156);
+            pictureBox15.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox15.TabIndex = 14;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox16.Dock = DockStyle.Fill;
+            pictureBox16.Location = new Point(492, 327);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(157, 156);
+            pictureBox16.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox16.TabIndex = 15;
+            pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox17.Dock = DockStyle.Fill;
+            pictureBox17.Location = new Point(655, 327);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(157, 156);
+            pictureBox17.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox17.TabIndex = 16;
+            pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox18.Dock = DockStyle.Fill;
+            pictureBox18.Location = new Point(818, 327);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(162, 156);
+            pictureBox18.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox18.TabIndex = 17;
+            pictureBox18.TabStop = false;
+            // 
+            // pnlMessage
+            // 
+            pnlMessage.BackColor = Color.MistyRose;
+            pnlMessage.Controls.Add(lblMessage);
+            pnlMessage.Font = new Font("Showcard Gothic", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            pnlMessage.Location = new Point(180, 261);
+            pnlMessage.Name = "pnlMessage";
+            pnlMessage.Size = new Size(635, 243);
+            pnlMessage.TabIndex = 1;
+            // 
+            // lblMessage
+            // 
+            lblMessage.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblMessage.Location = new Point(0, 0);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(635, 243);
+            lblMessage.TabIndex = 0;
+            lblMessage.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MemoryGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 726);
+            Controls.Add(pnlMessage);
             Controls.Add(tblMain);
             Name = "MemoryGame";
             Text = "Memory Game";
             tblMain.ResumeLayout(false);
             tblOutput.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            pnlMessage.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -392,5 +554,16 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label lblTurnsTaken;
+        private PictureBox pictureBox24;
+        private PictureBox pictureBox23;
+        private PictureBox pictureBox22;
+        private PictureBox pictureBox21;
+        private PictureBox pictureBox20;
+        private PictureBox pictureBox19;
+        private PictureBox pictureBox16;
+        private PictureBox pictureBox17;
+        private PictureBox pictureBox18;
+        private Panel pnlMessage;
+        private Label lblMessage;
     }
 }

@@ -222,12 +222,12 @@ namespace MemoryGame
                 lblMessage.Text = "Great Job! you managed to match all sets, You Won!!";
                 await Task.Delay(2000);
                 pnlMessage.Visible = false;
-                setsfound = 0;
-                turnstaken = 0;
-                UpdateScoreAndTurnsTaken();
-                AssignPicturesToPictureBoxVariables();
-                lstallpictureboxes.ForEach(p => p.ImageLocation = path + "question-mark-icon.png");
-                gamestatus = GameStageEnum.NotPlaying;
+                await Task.Delay(0005);
+                RestartGame();
+                
+                
+                
+                
 
             }
         }
@@ -239,7 +239,10 @@ namespace MemoryGame
             UpdateScoreAndTurnsTaken();
             AssignPicturesToPictureBoxVariables();
             lstallpictureboxes.ForEach(p => p.ImageLocation = path + "question-mark-icon.png");
-            gamestatus = GameStageEnum.Playing;
+            gamestatus = GameStageEnum.NotPlaying;
+            EnableDisableAllControls(EnableDisableEnum.disable);
+            pnlMessage.Visible = true;
+            lblMessage.Text = "Click Start To Start Playing!";
 
 
         }
@@ -259,7 +262,7 @@ namespace MemoryGame
             if (gamestatus == GameStageEnum.Playing && turnstaken >= 1)
 
             {
-                gamestatus = GameStageEnum.NotPlaying;
+                
                 RestartGame();
             }
 

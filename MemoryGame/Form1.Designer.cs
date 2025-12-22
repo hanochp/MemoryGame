@@ -118,9 +118,9 @@
             lblTurnsTaken.BackColor = Color.Coral;
             lblTurnsTaken.BorderStyle = BorderStyle.Fixed3D;
             lblTurnsTaken.Font = new Font("Lucida Sans", 18F);
-            lblTurnsTaken.Location = new Point(519, 12);
+            lblTurnsTaken.Location = new Point(507, 12);
             lblTurnsTaken.Name = "lblTurnsTaken";
-            lblTurnsTaken.Size = new Size(196, 44);
+            lblTurnsTaken.Size = new Size(221, 44);
             lblTurnsTaken.TabIndex = 6;
             lblTurnsTaken.Text = "Turns Taken: 0";
             lblTurnsTaken.TextAlign = ContentAlignment.MiddleCenter;

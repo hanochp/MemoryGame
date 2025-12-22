@@ -14,7 +14,7 @@ namespace MemoryGame
         GameStageEnum gamestatus = MemoryGame.GameStageEnum.NotPlaying;
         GameStageEnum CardsSelected = GameStageEnum.NoCardsSelected;
 
-        enum EnableDisableEnum { enable, disable}
+        enum EnableDisableEnum { enable, disable }
 
         int setsfound;
         int turnstaken;
@@ -105,7 +105,9 @@ namespace MemoryGame
                     TurnOverCard(pb);
                     CardsSelected = GameStageEnum.TwoCardsSelected;
                     cardsturnedover.Add(pb);
+
                     CheckIfMatch(cardsturnedover);
+
 
                 }
 
@@ -124,6 +126,7 @@ namespace MemoryGame
             PictureBox tick = new() { Image = Properties.Resources.Tick, SizeMode = PictureBoxSizeMode.Zoom, BackColor = Color.Transparent, Size = new Size(120, 120), };
             return tick;
         }
+
         private async void CheckIfMatch(List<PictureBox> lstcardsturnedover)
         {
             if (CardsSelected == GameStageEnum.TwoCardsSelected && lstcardsturnedover.Count == 2)
@@ -158,7 +161,7 @@ namespace MemoryGame
 
                     });
 
-                    //lstcardsturnedover.ForEach(c => c.Image = null);
+                    
                     setsfound++;
 
 
@@ -172,8 +175,43 @@ namespace MemoryGame
                 lstcardsturnedover.Clear();
                 turnstaken++;
                 UpdateScoreAndTurnsTaken();
+                DetectLoose();
+                DetectWin();
             }
 
+        }
+
+        private async void DetectLoose()
+        {
+            if (turnstaken - setsfound >= 10)
+            {
+                pnlMessage.Visible = true;
+                lblMessage.Text = "Sorry.. you lost! you had too many missed Tries.. try again";
+                await Task.Delay(2000);
+                pnlMessage.Visible = false;
+                RestartGame();
+            }
+
+            else
+            {
+                return;
+            }
+        }
+
+        private void DetectWin()
+        {
+            if(setsfound == 12)
+            {
+                pnlMessage.Visible = true;
+                lblMessage.Text = "Great Job! you managed to match all sets, You Won!!";
+                setsfound = 0;
+                turnstaken = 0;
+                UpdateScoreAndTurnsTaken();
+                AssignPicturesToPictureBoxVariables();
+                lstallpictureboxes.ForEach(p => p.ImageLocation = path + "question-mark-icon.png");
+                gamestatus = GameStageEnum.NotPlaying;
+
+            }
         }
 
         private void RestartGame()

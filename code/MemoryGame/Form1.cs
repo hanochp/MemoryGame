@@ -275,7 +275,6 @@ namespace MemoryGame
             }
             TakeTurn(pb);
 
-
         }
     }
 }

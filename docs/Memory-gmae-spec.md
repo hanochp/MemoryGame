@@ -4,7 +4,7 @@
 
 ## Game Overview
 
-The Memory Game is a single-player card-matching experience presented as a **6x4 grid** of **15 cards**. Each card shows a **question mark** on the front and a **picture** on the back. Every picture appears **exactly twice**, forming matching pairs. The interface includes a **top toolbar** with **Start** and **Restart** buttons plus counters for **Moves Taken** and **Sets Found**, and a **center label** that guides the player before and after play.
+The Memory Game is a single-player card-matching experience presented as a **6x4 grid** of **24 cards**. Each card shows a **question mark** on the front and a **picture** on the back. Every picture appears **exactly twice**, forming matching pairs. The interface includes a **top toolbar** with **Start** and **Restart** buttons plus counters for **Moves Taken** and **Sets Found**, and a **center label** that guides the player before and after play.
 
 ## Rules and Objectives
 
@@ -42,7 +42,7 @@ The game is presented as a **6x4 grid** containing **24 cards**.
 ## Win/Loss Conditions
 
 - **Win:** When all matching pairs are found, a center label announces the win, the game ends, and the interface returns to the initial pre-start state.
-- **Loss:** If the difference between **Moves Taken** and **Sets Found** exceeds **5**, the player loses and the game terminates.
+- **Loss:** If the difference between **Moves Taken** and **Sets Found** exceeds **10**, the player loses and the game terminates.
 
 ## Notes
 

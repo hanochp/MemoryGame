@@ -20,7 +20,7 @@ The Memory Game is a single-player card-matching experience presented as a **6x4
     - `Sets Found` increments by **1**.
     - The matched cards are removed from the board.
   - **If the cards do not match:** The cards are flipped back.
-- **Restarting:** Clicking **Restart** at any time returns the game to the initial state; all progress is cleared and the player must click **Start** again.
+- **Restarting:** Clicking **Restart** after the player has cklicked at least one card returns the game to the initial state; all progress is cleared and the player must click **Start** again.
 
 ## Player Interactions
 
